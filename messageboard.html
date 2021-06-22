@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="留言板.js"></script>
 </head>
 <body>
-
 <!-- start your project here -->
 <!-- Main navigation -->
 <header>
@@ -43,6 +43,7 @@
               <a class="dropdown-item " href="https://weibo.com/u/7013324401?refer_flag=1005050005_&is_all=1" target="_blank">微博</a>
               <a class="dropdown-item" href="http://1797677158.qzone.qq.com" target="_blank">空间</a>
               <a class="dropdown-item" href="./travel.html">旅行</a>
+              <a class="dropdown-item" href="./photography.html">摄影</a>
             </div>
           </li>
           <li class="nav-item">
@@ -71,15 +72,55 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-md-12 mb-4 white-text text-center">
-            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
-              data-wow-delay="0.3s"><strong>留言板</strong></h1>
-            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>comments</strong></h5>
-            <div class="message_text">
-                <textarea name="" id="text" cols="30" rows="10" style="font-size: 20px;width: 800px;height:140px;border-radius: 10px;float:bottom;"></textarea>
-                <br>
-                <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">留言</a>
-            </div>
+ <!-- Reply section -->
+<section class="my-5">
+
+  <!-- Leave a reply -->
+  <h2 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+  data-wow-delay="0.3s"><strong>留言板</strong></h2>
+
+  <!-- Reply form -->
+  <form class="mt-4">
+
+    <div class="d-md-flex flex-md-fill">
+
+      <div class="input-group input-group-md px-2 mb-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text white grey-text" id="basic-addon9">1</span>
+        </div>
+        <input type="text" class="form-control mt-0 black-border rgba-white-strong" placeholder="姓名"
+          aria-describedby="basic-addon9">
+      </div>
+      <div class="input-group input-group-md px-2 mb-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text white grey-text" id="basic-addon10">2</span>
+        </div>
+        <input type="text" class="form-control mt-0 black-border rgba-white-strong" placeholder="电子邮箱"
+          aria-describedby="basic-addon10">
+      </div>
+      <div class="input-group input-group-md px-2 mb-4">
+        <div class="input-group-prepend">
+          <span class="input-group-text white grey-text" id="basic-addon101">3</span>
+        </div>
+        <input type="text" class="form-control mt-0 black-border rgba-white-strong" placeholder="你的博客网址"
+          aria-describedby="basic-1">
+      </div>
+
+    </div>
+
+    <div class="form-group px-2">
+      <textarea class="form-control pl-3 pt-3" id="exampleFormControlTextarea1" rows="6" placeholder="留言..."></textarea>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">留言</button>
+    </div>
+
+  </form>
+  <!-- Reply form -->
+
+</section>
+<!-- Reply section -->
           </div>
           <!--Grid column-->
         </div>
